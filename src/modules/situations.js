@@ -118,6 +118,24 @@ const professional = {
 			"Only the bottom 5 rated wrestlers are willing to work with them for the next 3 months.",
 			"No one in our company is willing to work with them for the next 3 months."
 		]
+	},
+	improvement: {
+		base: " has gained a reputation of being a really good worker. ",
+		outcome: [
+			"The top 10 rated wrestlers are interested in performing with them.",
+			"The 8th rated wrestler is interested wants to do a rivarly with them.",
+			"The 4th rated wrestler is interested wants to do a rivarly with them.",
+			"The 2nd rated wrestler is interested wants to do a rivarly with them.",
+			"The Singles champion has asked to work with them more.",
+			"The World champion has asked to work with them more."
+		]
+	},
+	excellence: {
+		base: " has gained a reputation of being a one of the best wrestlers in the world. ",
+		outcome: [
+			"We should reward them with a major push in our singles division.",
+			"We should reward them with a major push in our world division."
+		]
 	}
 }
 const promotional = {
@@ -227,9 +245,11 @@ const social = {
 
 
 
-
-
 const common = [
+	{t: "business as usual."},
+	{t: "business as usual."},
+	{t: "business as usual."},
+	{t: "business as usual."},
 	{t: "business as usual."},
 	// injury
 	{t: champions.random() + injury.minor.base + injury.minor.outcome.random()},
@@ -237,18 +257,21 @@ const common = [
 	{t: major_rankers.random() + injury.minor.base + injury.minor.outcome.random()},
 	{t: minor_rankers.random() + injury.minor.base + injury.minor.outcome.random()},
 	{t: contenders.random() + championships.random() + injury.minor.base + injury.minor.outcome.random()},
-	// personal
-	{t: contenders.random() + championships.random() + personal.minor.base + personal.minor.outcome.random()},
-	// professional
-	{t: minor_rankers.random() + professional.minor.base + professional.minor.outcome.random()},
-	// promotional
-	{t: major_rankers.random() + promotional.major.base + promotional.major.outcome.random()},
+	{t: champions.random() + injury.minor.base + injury.minor.outcome.random()},
+	{t: critical_rankers.random() + injury.minor.base + injury.minor.outcome.random()},
+	{t: major_rankers.random() + injury.minor.base + injury.minor.outcome.random()},
+	{t: minor_rankers.random() + injury.minor.base + injury.minor.outcome.random()},
+	{t: contenders.random() + championships.random() + injury.minor.base + injury.minor.outcome.random()},
 	// raise
+	{t: critical_rankers.random() + raise.minor.base},
+	{t: minor_rankers.random() + raise.minor.base},
+	{t: major_rankers.random() + raise.minor.base},
+	{t: critical_rankers.random() + raise.minor.base},
 	{t: minor_rankers.random() + raise.minor.base},
 	{t: major_rankers.random() + raise.minor.base},
 	// signing
+	{t: signing.major.base + signing.major.outcome.random()},
 	{t: signing.minor.base},
-
 ];
 const uncommon = [
 	// disgruntlement
@@ -256,16 +279,14 @@ const uncommon = [
 	// injury
 	{t: critical_rankers.random() + injury.major.base + injury.major.outcome.random()},
 	{t: major_rankers.random() + injury.major.base + injury.major.outcome.random()},
-	{t: minor_rankers.random() + injury.major.base + injury.major.outcome.random()},
 	// professional
 	{t: minor_rankers.random() + professional.major.base + professional.major.outcome.random()},
 	{t: major_rankers.random() + professional.minor.base + professional.minor.outcome.random()},
+	{t: contenders.random() + championships.random() + personal.minor.base + personal.minor.outcome.random()},
+	{t: minor_rankers.random() + professional.improvement.base + professional.improvement.outcome.random()},
 	// promotional
 	{t: critical_rankers.random() + promotional.minor.base + promotional.minor.outcome.random()},
-	// raise
-	{t: critical_rankers.random() + raise.minor.base},
-	// signing
-	{t: signing.major.base + signing.major.outcome.random()},
+	{t: major_rankers.random() + promotional.major.base + promotional.major.outcome.random()},
 	// social
 	{t: minor_rankers.random() + social.minor.base + social.minor.outcome.random()},
 ];
@@ -276,11 +297,15 @@ const rare = [
 	// injury
 	{t: champions.random() + injury.major.base + injury.major.outcome.random()},
 	{t: critical_rankers.random() + injury.major.base + injury.major.outcome.random()},
+	{t: contenders.random() + injury.major.base + injury.major.outcome.random()},
 	// justice
 	{t: champions.random() + justice.minor.base + justice.minor.outcome.random()},
 	// professional
 	{t: major_rankers.random() + professional.serious.base + professional.serious.outcome.random()},
 	{t: champions.random() + professional.major.base + professional.major.outcome.random()},
+	{t: minor_rankers.random() + professional.excellence.base + professional.excellence.outcome.random()},
+	{t: major_rankers.random() + professional.excellence.base + professional.excellence.outcome.random()},
+	{t: critical_rankers.random() + professional.excellence.base + professional.excellence.outcome.random()},
 	// retirement
 	{t: major_rankers.random() + retirement.minor.base + retirement.minor.outcome.random()},
 	{t: critical_rankers.random() + retirement.minor.base + retirement.minor.outcome.random()},
@@ -305,6 +330,9 @@ const strange = [
 	// professional
 	{t: major_rankers.random() + professional.major.base + professional.major.outcome.random()},
 	{t: champions.random() + professional.minor.base + professional.minor.outcome.random()},
+	{t: minor_rankers.random() + professional.excellence.base + professional.excellence.outcome.random()},
+	{t: major_rankers.random() + professional.excellence.base + professional.excellence.outcome.random()},
+	{t: critical_rankers.random() + professional.excellence.base + professional.excellence.outcome.random()},
 	// promotional
 	{t: champions.random() + promotional.serious.base + promotional.serious.outcome.random()},
 	{t: critical_rankers.random() + promotional.serious.base + promotional.serious.outcome.random()},

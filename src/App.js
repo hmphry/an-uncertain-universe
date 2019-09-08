@@ -65,7 +65,7 @@ class App extends React.Component {
 					{this.showPastEvents()}
 				</section>
 				<footer className="grid-m-4 grid-t-10 push-t-1 grid-d-8 push-d-2">
-					<p>{title} was developed by <a href="https://hmphry.com">Emily Humphrey</a> on <a href="https://reactjs.org/">React</a>. Its code is released to the public domain. Feel free to browse, create an issue, or clone the repo on <a href="github.com">github</a> or wherever you'd like. Have a suggestion? Feel free to reach out to me on <a href="https://twitter.com/heyhmphry">twitter!</a></p>
+					<p>{title} was developed by <a href="https://hmphry.com">Emily Humphrey</a> on <a href="https://reactjs.org/">React</a>. Its code is released to the public domain. Feel free to browse, create an issue, or clone the repo on <a href="https://github.com/hmphry/an-uncertain-universe">github</a> or wherever you'd like. Have a suggestion? Feel free to reach out to me on <a href="https://twitter.com/heyhmphry">twitter!</a></p>
 				</footer>
 			</main>
 		);

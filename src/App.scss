@@ -1,0 +1,80 @@
+@import '~barebones.scss/source/base';
+
+body{
+	text-align: center;
+}
+
+.logo{
+	&{
+		display: block;
+		max-width: 400px;
+		margin: 100px auto 40px;
+	}
+	img{
+		display: block;
+		width: 100%;
+	}
+}
+p{
+	display: block;
+	margin: 10px auto;
+	max-width: 600px;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}
+h2, footer, .current-event-contain{
+	margin-top: 40px;
+}
+.past-events-contain{
+	&{
+		display: block;
+		max-height: 400px;
+		overflow: auto;
+		padding: 20px;
+		border: 1px solid #ccc;
+	}
+	p{
+		margin-bottom: 40px;
+	}
+	p:not(:last-child)::after{
+		content: "";
+		display: block;
+		width: 60px;
+		height: 1px;
+		margin: 40px auto 0;
+		background: #ccc;
+	}
+}
+.current-event-contain{
+	&{}
+	h2{
+		margin-top: 0;
+	}
+	p{
+		margin: 0 auto 40px;
+	}
+}
+.generate-event-container{
+	&{
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+	}
+	span{
+		display: block;
+		padding: 20px 40px;
+		border: 2px solid #000;
+	}
+	button{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+		color: transparent;
+		background: transparent;
+		border: transparent;
+	}
+}

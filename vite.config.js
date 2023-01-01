@@ -9,6 +9,11 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, 'src'),
       '#root': resolve(__dirname)
-    }
+    },
+    build: {
+      commonjsOptions: {
+         esmExternals: true 
+      },
+   }
   },
 })

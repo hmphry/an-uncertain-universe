@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "information": {
+            "first_name": "Adam",
+            "middle_name": "",
+            "last_name": "Cole",
+            "nick_name": ""
+        },
+        "personality": {}
+    },
+    {
+        "id": 2,
+        "information": {
+            "first_name": "Adam",
+            "middle_name": "",
+            "last_name": "Page",
+            "nick_name": "Hangman"
+        },
+        "personality": {}
+    },
+    {
+        "id": 3,
+        "information": {
+            "first_name": "Jon",
+            "middle_name": "",
+            "last_name": "Moxley",
+            "nick_name": ""
+        },
+        "personality": {}
+    },
+    {
+        "id": 4,
+        "information": {
+            "first_name": "Bryan",
+            "middle_name": "",
+            "last_name": "Danielson",
+            "nick_name": ""
+        },
+        "personality": {}
+    },
+    {
+        "id": 5,
+        "information": {
+            "first_name": "Maxwell",
+            "middle_name": "Jacob",
+            "last_name": "Friedman",
+            "nick_name": "MJF"
+        },
+        "personality": {}
+    },
+    {
+        "id": 6,
+        "information": {
+            "first_name": "Ricky",
+            "middle_name": "",
+            "last_name": "Starks",
+            "nick_name": ""
+        },
+        "personality": {}
+    },
+    {
+        "id": 7,
+        "information": {
+            "first_name": "Brody",
+            "middle_name": "",
+            "last_name": "King",
+            "nick_name": ""
+        },
+        "personality": {}
+    },
+    {
+        "id": 8,
+        "information": {
+            "first_name": "Chris",
+            "middle_name": "",
+            "last_name": "Jericho",
+            "nick_name": ""
+        },
+        "personality": {}
+    },
+    {
+        "id": 9,
+        "information": {
+            "first_name": "Darby",
+            "middle_name": "",
+            "last_name": "Allin",
+            "nick_name": ""
+        },
+        "personality": {}
+    },
+    {
+        "id": 10,
+        "information": {
+            "first_name": "Kenny",
+            "middle_name": "",
+            "last_name": "Omega",
+            "nick_name": ""
+        },
+        "personality": {}
+    }
+]
